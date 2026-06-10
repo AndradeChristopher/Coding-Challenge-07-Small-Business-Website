@@ -1,1 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Hertical, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 19px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.update-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.update-section input {
+    padding: 10px;
+    width: 250px;
+}
+
+.update-section button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 19px;
+}
+
+/* For the mobiles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
